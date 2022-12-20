@@ -4,14 +4,14 @@ from cores import *
 def menu():
     limparTela()
     print(Cores.vermelho + "-------- Sistema de Cadastro --------"+ Cores.reset)
-    print(f"{Cores.verde} 1 - Cadastrar Anime")
+    print(f"{Cores.verde}1 - Cadastrar Anime")
     print("2 - Editar Anime")
     print("3 - Excluir Anime")
     print("4 - Selecionar Anime")
     print("5 - Listar Animes")
     print("6 - Sair")
     print(Cores.vermelho + "-------------------------------------"+Cores.reset)
-    opcao = int(input(("Digite a opção desejada: ")))
+    opcao = int(input((Cores.vermelho + "Digite a opção desejada: "+Cores.reset)))
     return opcao
 
 persistencia = Persistencia()
